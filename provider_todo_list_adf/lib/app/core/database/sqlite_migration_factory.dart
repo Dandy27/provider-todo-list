@@ -14,5 +14,6 @@ class SqliteMigrationFactory {
     if (version == 2) {
       migrations.add(MigrationV3());
     }
+    return migrations;
   }
 }
