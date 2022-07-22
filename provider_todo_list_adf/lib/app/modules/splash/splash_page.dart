@@ -10,7 +10,11 @@ class SplashPage extends StatelessWidget {
         title: const Text('Splash Page'),
         centerTitle: true,
       ),
-      body: Container(color: Colors.black,),
+      body: Center(
+          child: TextButton(
+        onPressed: () => Navigator.of(context).pushNamed('/login'),
+        child: const Text('LOGIN'),
+      )),
     );
   }
 }
